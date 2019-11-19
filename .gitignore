@@ -1,0 +1,5 @@
+# ghostwriter backup files
+*.backup
+
+# no python virtual environment tracking
+conversions/venv/

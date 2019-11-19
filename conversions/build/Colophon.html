@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Colophon &#8212; PrISM &#34;0.0.1&#34; documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="References" href="references.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="references.html" title="References"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PrISM &#34;0.0.1&#34; documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#colophon" id="id1">Colophon</a></p>
+<ul>
+<li><p><a class="reference internal" href="#history" id="id2">History</a></p></li>
+<li><p><a class="reference internal" href="#multi-step-process" id="id3">Multi-step process</a></p></li>
+<li><p><a class="reference internal" href="#pandoc" id="id4">Pandoc</a></p></li>
+<li><p><a class="reference internal" href="#restructured-text" id="id5">reStructured Text</a></p></li>
+<li><p><a class="reference internal" href="#conversion-to-html" id="id6">Conversion to html</a></p></li>
+<li><p><a class="reference internal" href="#workspace-customization" id="id7">Workspace customization</a></p></li>
+<li><p><a class="reference internal" href="#github" id="id8">Github</a></p></li>
+<li><p><a class="reference internal" href="#read-the-docs" id="id9">Read-the-docs</a></p></li>
+<li><p><a class="reference internal" href="#misc-important-stuff" id="id10">Misc important stuff</a></p></li>
+<li><p><a class="reference internal" href="#bash-script-for-editing-automation" id="id11">Bash script for editing automation</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="colophon">
+<h1><a class="toc-backref" href="#id1">Colophon</a><a class="headerlink" href="#colophon" title="Permalink to this headline">¶</a></h1>
+<p>How this site came to be developed and tested on</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">uname</span> <span class="pre">-a</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">5.2.17-200.fc30.i686</span> <span class="pre">#1</span> <span class="pre">SMP</span> <span class="pre">Mon</span> <span class="pre">Sep</span> <span class="pre">23</span> <span class="pre">13:43:18</span> <span class="pre">UTC</span> <span class="pre">2019</span> <span class="pre">i686</span> <span class="pre">i686</span> <span class="pre">i386</span> <span class="pre">GNU/Linux</span></code></p>
+<div class="section" id="history">
+<h2><a class="toc-backref" href="#id2">History</a><a class="headerlink" href="#history" title="Permalink to this headline">¶</a></h2>
+<p>Original text content in <a class="reference external" href="https://github.github.com/gfm/">markdown</a>
+format was copied from the <a class="reference external" href="https://github.com/NorthwestGreenChemistry/PrISM/tree/develop/app/content">Prism app
+content</a>
+repository develop branch. Images came from <a class="reference external" href="https://github.com/NorthwestGreenChemistry/PrISM/tree/develop/app/assets">PrISM app
+assets</a>
+repository develop branch.</p>
+<p>The original electron app was developed with the intent of publishing
+this content inside the app. The app worked great, however required an
+annual fee for authentication and required end users to install a
+special app on their computers.</p>
+<p>This document is the tutorial content liberated from the app.</p>
+</div>
+<div class="section" id="multi-step-process">
+<h2><a class="toc-backref" href="#id3">Multi-step process</a><a class="headerlink" href="#multi-step-process" title="Permalink to this headline">¶</a></h2>
+<p>Converting multiple markdown pages into an organized website.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">markdown</span> <span class="pre">-&gt;</span> <span class="pre">Pandoc</span> <span class="pre">-&gt;</span> <span class="pre">reStructuredText</span> <span class="pre">-&gt;</span> <span class="pre">Sphinx</span> <span class="pre">-&gt;</span> <span class="pre">html</span> <span class="pre">-&gt;</span> <span class="pre">Github</span> <span class="pre">-&gt;</span> <span class="pre">read-the-docs</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="pandoc">
+<h2><a class="toc-backref" href="#id4">Pandoc</a><a class="headerlink" href="#pandoc" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Converting from markdown to reStructuredText requires the
+<a class="reference external" href="https://pandoc.org/installing.html#linux">installation</a> and
+running of <a class="reference external" href="https://pandoc.org/index.html">Pandoc</a>.</p></li>
+<li><p>Command line syntax generic</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">pandoc</span> <span class="pre">-s</span> <span class="pre">-t</span> <span class="pre">rst</span> <span class="pre">--toc</span> <span class="pre">$source</span>&#160; <span class="pre">-o</span> <span class="pre">$target</span></code> where:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">$source=~/workspace/PrISM-read-the-docs/content</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$target=~/workspace/PrISM-read-the-docs/conversions/source</span></code></p></li>
+<li><p>Pandoc copies from .md <code class="docutils literal notranslate"><span class="pre">/content</span></code> and converts into .rst
+<code class="docutils literal notranslate"><span class="pre">/source</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="restructured-text">
+<h2><a class="toc-backref" href="#id5">reStructured Text</a><a class="headerlink" href="#restructured-text" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p><a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> has
+an .rst suffix.</p>
+<ul>
+<li><p>Pandoc outputs the .rst files to:</p>
+<p><code class="docutils literal notranslate"><span class="pre">~/workspace/PrISM-read-the-docs/conversions/source</span></code></p>
+</li>
+</ul>
+</li>
+<li><p>Currently the <code class="docutils literal notranslate"><span class="pre">/conversion/source/*.rst</span></code> files are the result of a
+scripted conversion from the markdown and should not be edited
+directly.</p></li>
+</ul>
+</div>
+<div class="section" id="conversion-to-html">
+<h2><a class="toc-backref" href="#id6">Conversion to html</a><a class="headerlink" href="#conversion-to-html" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Conversion to <strong>html</strong> requires the installation and running of
+<a class="reference external" href="http://www.sphinx-doc.org/en/master/index.html">Sphinx</a> a python
+based document generator.</p>
+<ul>
+<li><p>Change into the <code class="docutils literal notranslate"><span class="pre">/conversions</span></code> directory, which also has (or
+will have) the Makefile.</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">~/workspace/PrISM-read-the-docs/conversions/</span></code></p>
+</li>
+<li><p><strong>One time only</strong>, to generate some sphinx defaults</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">sphinx-quickstart</span></code></p>
+</li>
+<li><p>Command line syntax generic:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">sphinx-build</span> <span class="pre">-b</span> <span class="pre">html</span> <span class="pre">source</span> <span class="pre">build</span></code></p>
+</li>
+<li><p>Command line syntax <strong>specific to this project</strong>:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">sphinx-build</span> <span class="pre">-b</span> <span class="pre">html</span> <span class="pre">\</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">~/workspace/PrISM-read-the-docs/conversions/source</span> <span class="pre">\</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">~/workspace/PrISM-read-the-docs/conversions/build</span></code></p>
+</li>
+<li><p>Sphinx expects an <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> file that dictates the table of
+contents. In this project the index did not exist previously, and
+was therefor created in the <code class="docutils literal notranslate"><span class="pre">/source</span></code> directory, and outlined in
+a way that seemed to mimic the numbering of the original markdown
+documents.</p></li>
+</ul>
+</li>
+<li><p>The transformed output <em>build</em> documents are served as a web page
+something like:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">firefox</span> <span class="pre">~/workspace/PrISM-read-the-docs/conversions/build/index.html</span></code></p>
+</li>
+</ul>
+</div>
+<div class="section" id="workspace-customization">
+<h2><a class="toc-backref" href="#id7">Workspace customization</a><a class="headerlink" href="#workspace-customization" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p><a class="reference external" href="https://pandoc.org/installing.html#linux">Install</a> Pandoc. On
+<a class="reference external" href="https://apps.fedoraproject.org/packages/pandoc">Fedora</a> linux it
+might look something like:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">sudo</span> <span class="pre">dnf</span> <span class="pre">install</span> <span class="pre">pandoc</span></code></p>
+</li>
+<li><p>Install python <a class="reference external" href="https://pypi.org/project/virtualenv/">virtual
+environment</a> something like:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">virtualenv</span></code></p>
+</li>
+<li><p>Create a virtual environment for the project</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">~/workspace/PrISM-read-the-docs/conversions/</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">virtualenv</span> <span class="pre">venv</span></code></p>
+</li>
+<li><p>Enable the python virtual environment</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">~/workspace/PrISM-read-the-docs/conversions/</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">source</span> <span class="pre">./venv/bin/activate</span></code></p>
+</li>
+<li><p>Install <a class="reference external" href="http://www.sphinx-doc.org/en/master/index.html">Sphinx</a></p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">~/workspace/PrISM-read-the-docs/conversions/</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">-U</span> <span class="pre">sphinx</span></code></p>
+</li>
+</ol>
+</div>
+<div class="section" id="github">
+<h2><a class="toc-backref" href="#id8">Github</a><a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>This documentation can be accessed at
+github.com/NorthwestGreenChemistry/<a class="reference external" href="https://github.com/NorthwestGreenChemistry/PrISM-read-the-docs">PrISM-read-the-docs</a>
+something like:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/NorthwestGreenChemistry/PrISM-read-the-docs.git</span></code></p>
+<ul>
+<li><p>and once the edits are done push back to the repository</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">origin</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>`https://github.com/NorthwestGreenChemistry/PrISM-read-the-docs.git `
+</pre></div>
+</div>
+</li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">push</span> <span class="pre">-u</span> <span class="pre">origin</span> <span class="pre">develop</span></code></p>
+</li>
+</ul>
+</div>
+<div class="section" id="read-the-docs">
+<h2><a class="toc-backref" href="#id9">Read-the-docs</a><a class="headerlink" href="#read-the-docs" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>“<a class="reference external" href="http://readthedocs.org/">Read the Docs</a> simplifies software
+documentation by automating building, versioning, and hosting of your
+docs for you. Think of it as Continuous Documentation.”</p>
+</div></blockquote>
+<ol class="arabic">
+<li><p>Write the recommended <code class="docutils literal notranslate"><span class="pre">readthedocs.yml</span></code>
+<a class="reference external" href="https://docs.readthedocs.io/en/stable/config-file/index.html#configuration-file">configuration</a>
+file into the root directory of the project. For example</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">touch</span> <span class="pre">~/workspace/PrISM-read-the-docs/readthedocs.yml</span></code></p>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">push</span></code> the repository to Github.</p></li>
+<li><p><a class="reference external" href="https://readthedocs.org/accounts/login/">Sign in</a> to the
+read-the-docs account to administer the configuration.</p></li>
+<li><p>View the resulting documentation at
+<a class="reference external" href="https://prism.readthedocs.io">prism.readthedocs.io</a></p></li>
+</ol>
+</div>
+<div class="section" id="misc-important-stuff">
+<h2><a class="toc-backref" href="#id10">Misc important stuff</a><a class="headerlink" href="#misc-important-stuff" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>The original links paths to assets such as images were hard coded in
+the app where the In this document the hard coding have been deleted
+and replaced with relative paths. This means the location of the
+asset directory matters relative to <code class="docutils literal notranslate"><span class="pre">/source</span></code>. The assets directory
+was manually <strong>copied</strong> once into <code class="docutils literal notranslate"><span class="pre">/source</span></code> to allow Sphinx to
+easily find the assets.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">conversions</span>
+           <span class="o">|-</span> <span class="o">/</span><span class="n">source</span><span class="o">/</span>
+                     <span class="n">assets</span>
+                     <span class="p">(</span><span class="n">content</span> <span class="o">.</span><span class="n">rst</span> <span class="n">files</span><span class="p">)</span>
+           <span class="o">|-</span> <span class="o">/</span><span class="n">build</span>
+</pre></div>
+</div>
+</li>
+<li><p>In order for the github repository to accurately render the markdown
+pages with images the <code class="docutils literal notranslate"><span class="pre">/assets</span></code> directory must be <strong>moved</strong> into
+the <code class="docutils literal notranslate"><span class="pre">/content</span></code> directory.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">content</span>
+       <span class="o">|-</span> <span class="o">/</span><span class="n">assets</span>
+<span class="o">/</span><span class="n">conversions</span>
+</pre></div>
+</div>
+</li>
+<li><p>Markdown is great for simple docs, however reStructuredText meets the
+challenges of more complex documents, including features like table
+of contents and indexing. If this Sphinx document format is
+marketable, it may make sense in a future revision to move away from
+markdown to only use the reStructuredText.</p></li>
+</ul>
+</div>
+<div class="section" id="bash-script-for-editing-automation">
+<h2><a class="toc-backref" href="#id11">Bash script for editing automation</a><a class="headerlink" href="#bash-script-for-editing-automation" title="Permalink to this headline">¶</a></h2>
+<p>There is a bash script written just for this project to allow the
+conversion process to be repeated during editing of the markdown files.</p>
+<p>script</p>
+<ul class="simple">
+<li><p>location: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">~/workspace/PrISM-read-the-docs/conversions/</span></code></p></li>
+<li><p>filename: <code class="docutils literal notranslate"><span class="pre">convert-md-to-rst-to-html.sh</span></code></p></li>
+</ul>
+<p>running the script</p>
+<ul class="simple">
+<li><p>Make the script executable</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">chmod</span> <span class="pre">744</span> <span class="pre">convert-md-to-rst-to-html.sh</span></code></p></li>
+</ul>
+</li>
+<li><p>make some edits to the markdown in <code class="docutils literal notranslate"><span class="pre">/content</span></code></p></li>
+<li><p>run the script in <code class="docutils literal notranslate"><span class="pre">/conversions</span></code> like this:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./convert-md-to-rst-to-html.sh</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Colophon</a><ul>
+<li><a class="reference internal" href="#history">History</a></li>
+<li><a class="reference internal" href="#multi-step-process">Multi-step process</a></li>
+<li><a class="reference internal" href="#pandoc">Pandoc</a></li>
+<li><a class="reference internal" href="#restructured-text">reStructured Text</a></li>
+<li><a class="reference internal" href="#conversion-to-html">Conversion to html</a></li>
+<li><a class="reference internal" href="#workspace-customization">Workspace customization</a></li>
+<li><a class="reference internal" href="#github">Github</a></li>
+<li><a class="reference internal" href="#read-the-docs">Read-the-docs</a></li>
+<li><a class="reference internal" href="#misc-important-stuff">Misc important stuff</a></li>
+<li><a class="reference internal" href="#bash-script-for-editing-automation">Bash script for editing automation</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="references.html"
+                        title="previous chapter">References</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Colophon.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="references.html" title="References"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PrISM &#34;0.0.1&#34; documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Northwest Green Chemistry.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.
+    </div>
+  </body>
+</html>

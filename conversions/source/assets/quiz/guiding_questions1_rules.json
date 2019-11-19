@@ -1,0 +1,50 @@
+[
+    {
+        "conditions": {
+            "feedstock.What is the preferred feedstock goal or goals? Please select all that apply": {
+                "or": [
+                        "empty",
+                        {"not":
+                          {"includes": "Biobased"}
+                        }
+                ]
+            }
+        },
+        "event": {
+            "type": "remove",
+            "params": {
+                "field": [
+                    "feedstock.If you've selected 'Bio-based' for the previous question:"
+                ]
+            }
+        }
+    },
+    {
+        "conditions": {
+            "waste3.Are you designing the product for recycling or for biodegradation in wastewater treatment plants or in commercial composting operations?": {
+                "or": [
+                    "empty",
+                    {
+                        "not": {
+                            "or": [
+                                {"includes":"Biodegradable (Litter, marine or other)"},
+                                {"includes":"Home compostable"},
+                                {"includes":"Industrial compostable"},
+                                {"includes":"Biodegradable (WWTP)"}
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "event": {
+            "type": "remove",
+            "params": {
+                "field": [
+                    "waste3.What test(s) will you perform to ensure your product is biodegradable or compostable in these conditions?",
+                    "waste3.What certification(s) will you pursue to guarantee your product is biodegradable or compostable in these conditions?"
+                ]
+            }
+        }
+    }
+]
