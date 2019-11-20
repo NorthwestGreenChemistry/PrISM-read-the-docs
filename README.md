@@ -6,7 +6,10 @@ The original electron app was developed with the intent of publishing this conte
 
 This repository contains the tutorial content liberated from the app.
 
-The content can be read on `prism.readthedocs.io` [:link:](https://nwgc-prism.readthedocs.io/)
+The content can be read on:
+
+* develop branch: `nwgc-prism.readthedocs.io` [:link:](https://nwgc-prism.readthedocs.io/en/develop/index.html)
+* latest (master branch): `nwgc-prism.readthedocs.io` [:link:](https://nwgc-prism.readthedocs.io/en/latest/)
 
 
 ## Develop
