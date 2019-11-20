@@ -67,3 +67,8 @@ html_theme_options = {
     'stickysidebar':'true',
     'externalrefs':'true'
 }
+
+
+# The document name of the “master” document, that is, the document
+# that contains the root toctree directive. Default is 'index'.
+master_doc = "index"
